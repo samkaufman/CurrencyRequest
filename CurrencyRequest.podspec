@@ -22,12 +22,12 @@ Pod::Spec.new do |s|
     with various Coursera assignments by myself and Don Patterson.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/CurrencyRequest"
+  s.homepage         = "https://github.com/samkaufman/CurrencyRequest"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Sam Kaufman" => "emrysk@gmail.com" }
   s.source           = { :git => "https://github.com/samkaufman/CurrencyRequest.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/samkaufman'
+  s.social_media_url = 'https://twitter.com/samkaufman'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
