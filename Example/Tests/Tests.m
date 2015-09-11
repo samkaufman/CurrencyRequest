@@ -35,8 +35,8 @@
         assert(!error);
         for (NSString *cur in [CRCurrencyResults supportedCurrencies]) {
             double v = [[self.lastCurrencies valueForKey:cur] doubleValue];
-            XCTAssertGreaterThan(v, 0.0);
-            XCTAssertLessThan(v, 100000.0);
+            XCTAssertLessThan(v, 100000.0, @"%.4f for %@ was not less than 100000", v, cur);
+            XCTAssertGreaterThan(v, 0.0, @"%.4f for %@ was not greater than 0", v, cur);
         }
     }];
 }

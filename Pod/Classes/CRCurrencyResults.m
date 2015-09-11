@@ -57,13 +57,13 @@
 
 - (double)_rateForCurrency:(NSString *)currency {
     
-    double usdAgainstEuro = [_pkg[@"USD"] doubleValue];
+    if ([currency isEqualToString:@"USD"]) {
+        return 1.0;
+    }
     
+    double usdAgainstEuro = [_pkg[@"USD"] doubleValue];
     if ([currency isEqualToString:@"EUR"]) {
         return 1.0 / usdAgainstEuro;
-    }
-    else if ([currency isEqualToString:@"USD"]) {
-        return 1.0;
     }
     
     NSString *strResult = _pkg[currency];
@@ -83,6 +83,7 @@
 
 # pragma mark - Dynamically resolved public methods
 
+@dynamic USD;
 @dynamic EUR;
 @dynamic JPY;
 @dynamic BGN;
