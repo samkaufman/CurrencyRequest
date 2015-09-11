@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/samkaufman/CurrencyRequest.svg)](https://travis-ci.org/samkaufman/CurrencyRequest)
+
 # CurrencyRequest
 
 A simple module for getting current currency exchange rates from the European
