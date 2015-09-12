@@ -32,7 +32,7 @@
     
     __weak CRCurrencyRequest *weakSelf = self;
     
-    id url = [NSURL URLWithString:@"http://www.ecb.int/stats/eurofxref/eurofxref-daily.xml"];
+    id url = [NSURL URLWithString:@"https://www.ecb.int/stats/eurofxref/eurofxref-daily.xml"];
     id task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         CRCurrencyRequest *strongSelf = weakSelf;
