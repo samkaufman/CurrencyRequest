@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CurrencyRequest"
-  s.version          = "0.1.0"
+  s.version          = "0.1.2"
   s.summary          = "A simple Pod to help with a few of our Coursera assignments."
 
 # This description is used to generate tags and improve search results.
