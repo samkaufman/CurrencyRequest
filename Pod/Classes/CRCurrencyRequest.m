@@ -71,7 +71,7 @@
 
 - (CRCurrencyResults *)_offlineResponse {
     NSBundle *subBundle = [NSBundle bundleForClass:[self class]];
-    NSURL *snapshotURL = [subBundle URLForResource:@"eurofxref-daily-snapshot" withExtension:@"xml"];
+    NSURL *snapshotURL = [subBundle URLForResource:@"eurofxref-daily-snapshot" withExtension:@"xml" subdirectory:@"CurrencyRequest.bundle"];
     NSData *snapshotData = [NSData dataWithContentsOfURL:snapshotURL];
     return [[CRCurrencyResults alloc] _initWithXMLData:snapshotData];
 }

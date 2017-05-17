@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "CurrencyRequest"
-  s.version          = "0.1.2"
+  s.version          = "0.2"
   s.summary          = "A simple Pod to help with a few of our Coursera assignments."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
     A simple module for getting current currency exchange rates from the European
     Central Bank, and for faking it if that fails for any reason. Intended for use
@@ -29,12 +29,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/samkaufman/CurrencyRequest.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/samkaufman'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '10.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'CurrencyRequest' => ['Pod/Assets/*.plist', 'Pod/Assets/eurofxref-dailyref-snapshot.xml']
+    'CurrencyRequest' => ['Pod/Assets/*.plist', 'Pod/Assets/eurofxref-daily-snapshot.xml']
   }
 
   s.public_header_files = 'Pod/Classes/**/*.h'

@@ -1,5 +1,5 @@
 PODS:
-  - CurrencyRequest (0.1.2)
+  - CurrencyRequest (0.2)
 
 DEPENDENCIES:
   - CurrencyRequest (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CurrencyRequest: 1cbf8877b3dd52286eeea1fb245a18cb49191caf
+  CurrencyRequest: f1bdef3b12f1bb5601203d84870688639315c825
 
 PODFILE CHECKSUM: fbec651783462ebf553fc2204ffe84c1d970e72e
 
