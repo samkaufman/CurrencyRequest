@@ -1,10 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'CurrencyRequest_Example', :exclusive => true do
+target 'CurrencyRequest_Example' do
   pod "CurrencyRequest", :path => "../"
 end
 
-target 'CurrencyRequest_Tests', :exclusive => true do
+target 'CurrencyRequest_Tests' do
   pod "CurrencyRequest", :path => "../"
 end

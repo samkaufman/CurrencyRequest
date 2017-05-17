@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'CurrencyRequest' => ['Pod/Assets/eurofxref-dailyref-snapshot.xml']
+    'CurrencyRequest' => ['Pod/Assets/*.plist', 'Pod/Assets/eurofxref-dailyref-snapshot.xml']
   }
 
   s.public_header_files = 'Pod/Classes/**/*.h'

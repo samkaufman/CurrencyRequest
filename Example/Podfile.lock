@@ -1,0 +1,16 @@
+PODS:
+  - CurrencyRequest (0.1.2)
+
+DEPENDENCIES:
+  - CurrencyRequest (from `../`)
+
+EXTERNAL SOURCES:
+  CurrencyRequest:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CurrencyRequest: 1cbf8877b3dd52286eeea1fb245a18cb49191caf
+
+PODFILE CHECKSUM: fbec651783462ebf553fc2204ffe84c1d970e72e
+
+COCOAPODS: 1.2.1
