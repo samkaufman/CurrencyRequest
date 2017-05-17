@@ -29,16 +29,16 @@
 }
 
 - (void)start {
-    
+
     __weak CRCurrencyRequest *weakSelf = self;
     
-    id url = [NSURL URLWithString:@"https://www.ecb.int/stats/eurofxref/eurofxref-daily.xml"];
+    id url = [NSURL URLWithString:@"https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml"];
     id task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        
+
         CRCurrencyRequest *strongSelf = weakSelf;
         CRCurrencyResults *toRet;
         NSInteger code = [(NSHTTPURLResponse *)response statusCode];
-        
+
         if (error || !data) {
             toRet = [self _offlineResponse];
         }
@@ -54,14 +54,14 @@
                 toRet = parsed;
             }
         }
-        
+
         // Call delegate
         if (strongSelf) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [strongSelf.delegate currencyRequest:strongSelf retrievedCurrencies:toRet];
             });
         }
-        
+
     }];
     [task resume];
 }
